@@ -28,10 +28,11 @@ export const NavBarContainer = styled(Box)(() => ({
 export const NavBarTabs = styled(Box)(() => ({
     display: 'flex',
     flexDirection: 'row',
+    justifyContent:'space-around',
     alignItems: 'center',
 
     // height: "100%",
-    // width:"100%",
+    // width:"200px",
 
     // padding:"2px",
 
