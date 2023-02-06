@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+import CssBaseline from '@mui/material/CssBaseline';
+
+import NavBar from './components/NavBar/NavBar';
+import Store from './components/Store/Store';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <CssBaseline>
+      <Router className="App">
+        <NavBar />
+        <Routes>
+          <Route path='/store' element={<Store/>}/>
+        </Routes>
+      </Router>
+    </CssBaseline>
   );
 }
 
