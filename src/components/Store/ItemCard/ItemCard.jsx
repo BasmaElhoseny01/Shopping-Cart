@@ -2,8 +2,11 @@ import { Box, Button, Input, Typography } from '@mui/material'
 import React, { useState } from 'react'
 import DropDownList from '../../DropDownList/DropDownList'
 
-//Icons
-import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
+//Redux
+import { connect } from 'react-redux'
+//Action Creaters
+import { buyItem, removeItem } from '../../../redux'
+
 
 //Styles
 import { AddToCart, IncDecButton, IncDecContainer, ItemCardContainer, RemoveButton } from './styles'
@@ -22,13 +25,13 @@ function ItemCard(props) {
             </Box>
 
             {!chooseQuatity ?
-                <AddToCart onClick={()=>setChooseQuatity(true)}>+ Add to cart</AddToCart>
+                <AddToCart onClick={() => setChooseQuatity(true)}>+ Add to cart</AddToCart>
                 :
                 <>
                     <IncDecContainer>
                         <IncDecButton size="small">-</IncDecButton>
                         <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', width: '100%' }}>
-                            <Typography>1 items in cart</Typography>
+                            <Typography>{props.itemCount} items in cart</Typography>
                         </Box>
                         <IncDecButton size="small">+</IncDecButton>
                     </IncDecContainer>
@@ -36,11 +39,16 @@ function ItemCard(props) {
                     <RemoveButton>Remove</RemoveButton>
                 </>
             }
-
-
-
         </ItemCardContainer>
     )
 }
 
-export default ItemCard
+const mapStateToProps = (state, ownProps) => {
+    let numOf='numOf';
+    const item =  numOf.concat(ownProps.item.name,"s");
+
+    return {
+        itemCount:state[item]
+    }
+}
+export default connect(mapStateToProps)(ItemCard)
