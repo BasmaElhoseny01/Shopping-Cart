@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import { StoreContainer } from './styles'
 
+//Component
+import ItemCard from './ItemCard/ItemCard'
+
 //Data
 import itemsData from '../../data/items'
-import ItemCard from './ItemCard/ItemCard'
+
 function Store() {
   //State
   const [items, setItems] = useState([])
@@ -15,9 +18,13 @@ function Store() {
 
   return (
     <StoreContainer>
-      {items?.map((item) => {
-        return <ItemCard item={item} key={item?.id}/>
-      })}
+      {
+        items ?
+          ((Object.entries(items)).map(([key, item]) => {
+            return <ItemCard item={item} key={key} />
+          }))
+          : null
+      }
     </StoreContainer>
   )
 }

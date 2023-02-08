@@ -1,5 +1,5 @@
 import { Box, Typography } from '@mui/material'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 //Redux
 import { connect } from 'react-redux'
@@ -14,13 +14,15 @@ import { AddToCart, IncDecButton, IncDecContainer, ItemCardContainer, RemoveButt
 function ItemCard(props) {
     const { item } = props
 
+    useEffect(()=>{},[])
+
     //state
     const [chooseQuatity, setChooseQuatity] = useState(false)
     const [openSnackBar, setOpenSnackBar] = useState(false);
     const [snackBar, setSnackBar] = useState({ message: "" })
     return (
         <ItemCardContainer>
-            <img src={item?.imgUrl} alt={item?.name} width="100%" />
+            <img src={item?.imgUrl} alt={item?.name} width="300px" height="300px" style={{objectFit:"cover"}} />
             <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-around', alignItems: 'center', width: '100%', margin: "15px auto" }}>
                 <Typography>{item?.name}</Typography>
                 <Typography>{item?.price}</Typography>
@@ -69,9 +71,8 @@ function ItemCard(props) {
 const mapStateToProps = (state, ownProps) => {
     let numOf = 'numOf';
     const item = numOf.concat(ownProps.item.name, "s");
-
     return {
-        itemCount: state[item]
+        itemCount: state[item]?.count
     }
 }
 

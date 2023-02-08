@@ -4,20 +4,28 @@ import { DELETE_BOOK, DELETE_CAR } from './shoppingCartTypes'
 
 
 const intialCartState = {
-    numOfBooks: 0,
-    numOfCars: 0,
+    numOfBooks: { id: 1, count: 10 },
+    numOfCars: { id: 4, count: 10 },
 }
 
 export const shoppingCartReducer = (state = intialCartState, action) => {
     switch (action.type) {
         case BUY_BOOK: return {
             ...state,
-            numOfBooks: state.numOfBooks + action.payload
+            numOfBooks:
+            {
+                id: state.numOfBooks.id,
+                count: state.numOfBooks.count + action.payload
+            }
         }
 
         case BUY_CAR: return {
             ...state,
-            numOfCars: state.numOfCars + action.payload
+            numOfCars:
+            {
+                id: state.numOfCars.id,
+                count: state.numOfCars.count + action.payload
+            }
         }
 
 
@@ -26,7 +34,11 @@ export const shoppingCartReducer = (state = intialCartState, action) => {
                 return state
             return {
                 ...state,
-                numOfBooks: state.numOfBooks - action.payload
+                numOfBooks:
+                {
+                    id: state.numOfBooks.id,
+                    count: state.numOfBooks.count - action.payload
+                }
             }
         }
 
@@ -35,14 +47,22 @@ export const shoppingCartReducer = (state = intialCartState, action) => {
                 return state
             return {
                 ...state,
-                numOfCars: state.numOfCars - action.payload
+                numOfCars:
+                {
+                    id: state.numOfCars.id,
+                    count: state.numOfCars.count - action.payload
+                }
             }
         }
 
         case DELETE_BOOK: {
             return {
                 ...state,
-                numOfBooks: 0
+                numOfBooks:
+                {
+                    id: state.numOfBooks.id,
+                    count: 0
+                }
             }
         }
 
@@ -50,7 +70,11 @@ export const shoppingCartReducer = (state = intialCartState, action) => {
         case DELETE_CAR: {
             return {
                 ...state,
-                numOfCars: 0
+                numOfCars:
+                {
+                    id: state.numOfCars.id,
+                    count: 0
+                }
             }
         }
 
