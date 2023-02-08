@@ -18,14 +18,15 @@ export const NavBarContainer = styled(Box)(() => ({
 
     position: 'fixed',
     top: '0px',
+    zIndex:"0",
 
     backgroundColor: theme.palette.system.header,
 
-    borderBottom: '2px solid black'
+    // borderBottom: '2px solid black'
 }))
 
 //NavBarTabs
-export const NavBarTabs = styled(Box)(() => ({
+export const NavBarImages = styled(Box)(() => ({
     display: 'flex',
     flexDirection: 'row',
     justifyContent:'space-around',
@@ -37,17 +38,12 @@ export const NavBarTabs = styled(Box)(() => ({
     // padding:"2px",
 
     '& > *': {
-        margin: "0px 10px",
-    },
-
-    '& > a': {
-        textDecoration: "none",
-        color:"#000000"
+        margin: "0px 2px",
     }
 }))
 
 //Logo
 export const Logo = styled("img")(() => ({
     // height:'100%',
-    width: "80px"
+    width: "100px"
 }));

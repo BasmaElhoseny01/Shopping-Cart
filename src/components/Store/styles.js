@@ -12,7 +12,7 @@ export const StoreContainer = styled(Box)(() => ({
     alignItems: "center",
     flexWrap:'wrap',
 
-    width: '100vw',
+    // width: '100vw',
     height: "100vh",
 
     marginTop:'60px',
