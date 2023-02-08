@@ -1,5 +1,3 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
 import CssBaseline from '@mui/material/CssBaseline';
 
 //Redux
@@ -13,22 +11,24 @@ import SideBarStateContextProvider from './context/SideBarStateContext';
 import NavBar from './components/NavBar/NavBar';
 import Store from './components/Store/Store';
 import SideBar from './components/SideBar/SideBar';
+import { ThemeProvider } from '@mui/system';
+import theme from './styles';
 
 function App() {
   return (
-    <Provider store={store}>
-      <SideBarStateContextProvider>
-        <CssBaseline>
-          <Router className="App">
-            <NavBar />
-            <Routes>
-              <Route path='/store' element={<Store />} />
-            </Routes>
-            <SideBar anchor="right" />
-          </Router>
-        </CssBaseline>
-      </SideBarStateContextProvider>
-    </Provider >
+    <ThemeProvider theme={theme}>
+      <Provider store={store}>
+        <SideBarStateContextProvider>
+          <CssBaseline>
+            <div className="App">
+              <NavBar />
+              <Store />
+              <SideBar anchor="right" />
+            </div>
+          </CssBaseline>
+        </SideBarStateContextProvider>
+      </Provider >
+    </ThemeProvider>
   );
 }
 

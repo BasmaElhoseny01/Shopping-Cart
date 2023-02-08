@@ -7,7 +7,7 @@ import theme from '../../../styles';
 
 //NavBarContainer
 export const ItemCardContainer = styled(Box)(() => ({
-    width: '300px',
+    width: '200px',
 
     margin: '15px 20px',
 

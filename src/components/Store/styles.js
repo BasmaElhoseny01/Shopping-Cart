@@ -2,7 +2,7 @@ import { styled } from '@mui/material/styles';
 import { Box } from '@mui/system';
 
 //Theme
-import theme from '../../styles';
+// import theme from '../../styles';
 
 //NavBarContainer
 export const StoreContainer = styled(Box)(() => ({
@@ -17,5 +17,5 @@ export const StoreContainer = styled(Box)(() => ({
 
     marginTop:'60px',
 
-    background:theme.palette.system.body
+    // background:theme.palette.system.body
 }))

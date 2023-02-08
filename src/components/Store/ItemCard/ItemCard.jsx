@@ -22,7 +22,7 @@ function ItemCard(props) {
     const [snackBar, setSnackBar] = useState({ message: "" })
     return (
         <ItemCardContainer>
-            <img src={item?.imgUrl} alt={item?.name} width="300px" height="300px" style={{objectFit:"cover"}} />
+            <img src={item?.imgUrl} alt={item?.name} width="200px" height="150px" style={{objectFit:"cover"}} />
             <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-around', alignItems: 'center', width: '100%', margin: "15px auto" }}>
                 <Typography>{item?.name}</Typography>
                 <Typography>{item?.price}</Typography>
@@ -41,7 +41,7 @@ function ItemCard(props) {
                             })
                         }}>-</IncDecButton>
                         <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', width: '100%' }}>
-                            <Typography>{props?.itemCount} items in cart</Typography>
+                            <Typography>{props?.itemCount} in cart</Typography>
                         </Box>
                         <IncDecButton size="small" onClick={() => {
                             props.buyItem(1)
