@@ -1,11 +1,10 @@
-import { Box, Button, Input, Typography } from '@mui/material'
+import { Box, Typography } from '@mui/material'
 import React, { useState } from 'react'
-import DropDownList from '../../DropDownList/DropDownList'
 
 //Redux
 import { connect } from 'react-redux'
 //Action Creaters
-import { buyItem, removeItem } from '../../../redux'
+import { buyItem, removeItem,deleteItem } from '../../../redux'
 
 
 //Styles
@@ -29,14 +28,14 @@ function ItemCard(props) {
                 :
                 <>
                     <IncDecContainer>
-                        <IncDecButton size="small">-</IncDecButton>
+                        <IncDecButton size="small" onClick={() => { props.removeItem(1) }}>-</IncDecButton>
                         <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', width: '100%' }}>
                             <Typography>{props.itemCount} items in cart</Typography>
                         </Box>
-                        <IncDecButton size="small">+</IncDecButton>
+                        <IncDecButton size="small" onClick={() => { props.buyItem(1) }}>+</IncDecButton>
                     </IncDecContainer>
 
-                    <RemoveButton>Remove</RemoveButton>
+                    <RemoveButton onClick={()=>{props.deleteItem()}}>Remove</RemoveButton>
                 </>
             }
         </ItemCardContainer>
@@ -44,11 +43,20 @@ function ItemCard(props) {
 }
 
 const mapStateToProps = (state, ownProps) => {
-    let numOf='numOf';
-    const item =  numOf.concat(ownProps.item.name,"s");
+    let numOf = 'numOf';
+    const item = numOf.concat(ownProps.item.name, "s");
 
     return {
-        itemCount:state[item]
+        itemCount: state[item]
     }
 }
-export default connect(mapStateToProps)(ItemCard)
+
+const mapDispatchToProps = (dispatch, ownProps) => {
+    const item = ownProps.item.name;
+    return {
+        buyItem: (number) => dispatch(buyItem(item, number)),
+        removeItem: (number) => dispatch(removeItem(item, number)),
+        deleteItem: () => dispatch(deleteItem(item))
+    }
+}
+export default connect(mapStateToProps, mapDispatchToProps)(ItemCard)
