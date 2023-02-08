@@ -1,70 +1,78 @@
-# Getting Started with Create React App
+# Shopping Cart
+Shopping cart website using React-Redux library for as a state mangement tool 😊
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## <img  align= center width=50px src="https://media4.giphy.com/media/QWRbnbKwghRE0GbAQx/giphy.gif?cid=6c09b952e94104243102e0e29bf1cd0d358227a4f0eadc38&rid=giphy.gif&ct=s">Table of Content
 
-## Available Scripts
 
-In the project directory, you can run:
+- <a href ="#Live">Live Host</a>
+- <a href ="#Built">Built Using</a>
+- <a href ="#start">Get Started</a>
+- <a href ="#Demo">Demo</a>
+- <a href ="#Reference">Reference</a>
+- <a href ="#Contributors">Contributors</a>
+- <a href ="#License">License</a>
 
-### `npm start`
+## <img  align= center width=50px src="https://user-images.githubusercontent.com/72309546/217659299-c2b28c5f-e59b-47e6-bce3-0413546e1c7d.png"> Live Host<a id="Live"></a>
+dfg
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## <img  align= center width=50px src="https://thumbs.gfycat.com/ForkedTiredAmphibian-max-1mb.gif"> Built Using<a id="Built"></a>
+<div>
+<img height="60" src="https://media4.giphy.com/media/hUL5gdlvDgtRbOElZS/giphy.gif?cid=6c09b9520bff8929f81f38f3e937d4f653f4894942e8a5ad&rid=giphy.gif&ct=s" />
+<img height="60" src="https://mui.com/static/logo.png" />
+<img height="60" src="https://redux.js.org/img/redux-logo-landscape.png"/>
+</div>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## <img  align= center width=50px height=50px src="https://cdn.pixabay.com/animation/2022/07/31/06/27/06-27-17-124_512.gif">Get Started <a id = "start"></a>
 
-### `npm test`
+<ol>
+<li>Clone the repository
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<br>
 
-### `npm run build`
+```
+git clone https://github.com/BasmaElhoseny01/shoppingcart.git
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+</li>
+<li>Download Packages and its Dependencies
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<br>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+npm install
+```
 
-### `npm run eject`
+</li>
+<li>Run the program
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<br>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+</li>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## <img  align= center width=50px src="https://www.armediastudio.com/sites/default/files/cinegraph-hdr.gif"> Demo<a id="Demo"></a>
 
-## Learn More
+## <img  align= center width=50px src="https://i.pinimg.com/originals/b4/13/34/b41334a036d6796c281a6e5cbb36e4b5.gif"> Reference<a id="Reference"></a>
+- <a href="https://www.youtube.com/watch?v=9boMnm5X9ak">Redux Codevolution Playlist</a>
+- <a href="https://github.com/BasmaElhoseny01/Redux">My Repo Notes</a>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## <img  align= center width=50px height=50px src="https://digitalbeauty.com/wp-content/uploads/2019/03/GIF_DB_Computer.gif"> Contributors <a id = "Contributors"></a>
 
-### Code Splitting
+<table>
+  <tr>
+    <td align="center">
+    <a href="https://github.com/BasmaElhoseny01" target="_black">
+    <img src="https://avatars.githubusercontent.com/u/72309546?v=4" width="150px;" alt="Basma Elhoseny"/>
+    <br />
+    <sub><b>Basma Elhoseny</b></sub></a>
+    </td>
+  </tr>
+</table>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## <img  align= center width=50px height=50px src="https://moein.video/wp-content/uploads/2022/05/license-GIF-Certificate-Royalty-Free-Animated-Icon-350px-after-effects-project.gif"> License <a id = "License"></a>
+This software is licensed under MIT License, See [License](https://github.com/BasmaElhoseny01/shoppingcart/blob/master/LICENSE) for more information ©Basma Elhoseny.
