@@ -12,10 +12,8 @@ export const StoreContainer = styled(Box)(() => ({
     alignItems: "center",
     flexWrap:'wrap',
 
-    height: "100vh",
-
     marginTop:'60px',
-    padding:"0px 20px"
+    padding:"0px 50px"
 
     // background:theme.palette.system.body
 }))

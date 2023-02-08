@@ -20,7 +20,7 @@ function App() {
       <Provider store={store}>
         <SideBarStateContextProvider>
           <CssBaseline>
-            <div className="App">
+            <div className="App" sx={{marginBottom:"30px"}}>
               <NavBar />
               <Store />
               <SideBar anchor="right" />

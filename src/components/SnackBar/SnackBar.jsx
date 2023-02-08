@@ -11,7 +11,6 @@ function SnackBar(props) {
 
   const handleClose = (event, reason) => {
     if (reason === 'clickaway') {
-      console.log("clicked awat")
       return;
     }
     setOpen(false);
