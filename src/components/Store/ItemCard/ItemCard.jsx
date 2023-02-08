@@ -17,10 +17,10 @@ function ItemCard(props) {
     //state
     const [chooseQuatity, setChooseQuatity] = useState(false)
     const [openSnackBar, setOpenSnackBar] = useState(false);
-    const [snackBar, setSnackBar] = useState({ message: ""})
+    const [snackBar, setSnackBar] = useState({ message: "" })
     return (
         <ItemCardContainer>
-            <img src={item?.imgUrl} alt={item?.name}  width="100%" />
+            <img src={item?.imgUrl} alt={item?.name} width="100%" />
             <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-around', alignItems: 'center', width: '100%', margin: "15px auto" }}>
                 <Typography>{item?.name}</Typography>
                 <Typography>{item?.price}</Typography>
@@ -31,7 +31,7 @@ function ItemCard(props) {
                 :
                 <>
                     <IncDecContainer>
-                        <IncDecButton size="small" onClick={() => {
+                        <IncDecButton size="small" disabled={props?.itemCount === 0} onClick={() => {
                             props.removeItem(1)
                             setOpenSnackBar(true)
                             setSnackBar({
@@ -39,7 +39,7 @@ function ItemCard(props) {
                             })
                         }}>-</IncDecButton>
                         <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', width: '100%' }}>
-                            <Typography>{props.itemCount} items in cart</Typography>
+                            <Typography>{props?.itemCount} items in cart</Typography>
                         </Box>
                         <IncDecButton size="small" onClick={() => {
                             props.buyItem(1)
@@ -56,11 +56,13 @@ function ItemCard(props) {
                         setSnackBar({
                             message: item?.name + " deleted from cart",
                         })
-                    }}>Remove</RemoveButton>
+                    }}
+                        disabled={props?.itemCount === 0}>
+                        Remove</RemoveButton>
                     <SnackBar open={openSnackBar} setOpen={setOpenSnackBar} message={snackBar.message} />
                 </>
             }
-        </ItemCardContainer>
+        </ItemCardContainer >
     )
 }
 

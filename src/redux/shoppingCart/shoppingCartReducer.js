@@ -5,7 +5,7 @@ import { DELETE_BOOK, DELETE_CAR } from './shoppingCartTypes'
 
 const intialCartState = {
     numOfBooks: 0,
-    numOfCars: 0
+    numOfCars: 0,
 }
 
 export const shoppingCartReducer = (state = intialCartState, action) => {
