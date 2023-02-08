@@ -44,7 +44,7 @@ function SideBar(props) {
             <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', width: '100%', padding: "10px" }}>
                 <Typography fontSize="24px">Items</Typography>
                 <IconButton onClick={toggleDrawer(anchor, false)}>
-                    <CloseIcon fontSize='meduim' color="primary" />
+                    <CloseIcon fontSize='meduim' />
                 </IconButton>
             </Box>
             <Box

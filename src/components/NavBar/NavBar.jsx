@@ -15,6 +15,7 @@ import SuperMarketCart from '../../assets/shoppingcartImg.png'
 
 //context
 import { useSideBarStateContext } from '../../context/SideBarStateContext'
+import theme from '../../styles'
 
 function NavBar(props) {
 
@@ -30,8 +31,8 @@ function NavBar(props) {
         <Link href='./store'>Store</Link>
         <Typography>About</Typography>
       </NavBarTabs> */}
-      <Badge badgeContent={props.itemCount} color="secondary" onClick={() => setState(true)}>
-        <ShoppingCartIcon color="action" fontSize='large' />
+      <Badge badgeContent={props.itemCount} color="info" onClick={() => setState(true)} style={{cursor: 'pointer'}}>
+        <ShoppingCartIcon color={theme.palette.avatar.light} fontSize='large' />
       </Badge>
     </NavBarContainer>
 

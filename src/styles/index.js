@@ -6,13 +6,18 @@ const theme = createTheme({
       default: '#e0e0e0',
     },
     system: {
-      body: '#e0e0e0',
+      main: '#fafafa',
       header: "#FAFFFF99"
+    },
+    avatar:{
+      main:"#ff0000",
+      contrastText:"#ffffff",
+      light:"#2196f3"
     },
     itemcard: {
       body: "#fafafa",
-      button: "#0000ff",
-      remove: "red",
+      button: "#4285F4",
+      remove: "#ff0030",
     }
   },
 });

@@ -37,6 +37,10 @@ export const AddToCart = styled(Button)(() => ({
         letterSpacing: '0.5px',
     },
 
+    "&:hover": {
+        backgroundColor: "#eceff1",
+        color:"#000000",
+    }
 }))
 
 //Increase Decrease Container
@@ -59,7 +63,12 @@ export const IncDecButton = styled(Button)(() => ({
     backgroundColor: theme.palette.itemcard.button,
 
     //Text Color
-    color: "#ffffff"
+    color: "#ffffff",
+
+    "&:hover": {
+        backgroundColor: "#eceff1",
+        color:"#000000",
+    }
 }))
 
 //Remove Button
@@ -70,5 +79,10 @@ export const RemoveButton = styled(Button)(() => ({
     backgroundColor: theme.palette.itemcard.remove,
 
     //Text Color
-    color: "#ffffff"
+    color: "#ffffff",
+
+    "&:hover": {
+        backgroundColor: "#eceff1",
+        color:"#000000"
+    }
 }))

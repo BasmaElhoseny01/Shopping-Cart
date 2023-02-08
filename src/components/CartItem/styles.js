@@ -2,6 +2,8 @@ import { styled } from '@mui/material/styles';
 
 import { Box } from '@mui/material'
 
+//theme
+import theme from '../../styles';
 
 export const ItemCartContainer = styled(Box)(() => ({
     display: 'flex',
@@ -12,7 +14,9 @@ export const ItemCartContainer = styled(Box)(() => ({
 
     width: "95%",
     height: "80px",
-    margin: "5px auto",
+    margin: "10px auto",
+
+    backgroundColor:theme.palette.system.main,
 }))
 
 export const ItemCardChild = styled(Box)(({ start }) => ({
@@ -21,7 +25,7 @@ export const ItemCardChild = styled(Box)(({ start }) => ({
 
     alignItems: start === 'true' ? "flex-start" : "center",
     justifyContent: start === 'true' ? "flex-start" : "flex-end",
-    
+
     width: "50%",
 
     "& > *": {
