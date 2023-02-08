@@ -21,7 +21,7 @@ function Store() {
       {
         items ?
           ((Object.entries(items)).map(([key, item]) => {
-            return <ItemCard item={item} key={key} />
+            return <ItemCard item={item} ite key={key} />
           }))
           : null
       }

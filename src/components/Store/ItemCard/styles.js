@@ -7,14 +7,14 @@ import theme from '../../../styles';
 
 //NavBarContainer
 export const ItemCardContainer = styled(Box)(() => ({
-    width: '200px',
+    width: '250px',
 
     margin: '15px 20px',
 
-    display:'flex',
-    flexDirection:'column',
-    justifyContent:'flex-start',
-    alignItems:'center',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'flex-start',
+    alignItems: 'center',
 
     backgroundColor: theme.palette.itemcard.body,
     boxShadow: "rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px",
@@ -29,19 +29,26 @@ export const AddToCart = styled(Button)(() => ({
     backgroundColor: theme.palette.itemcard.button,
 
     //Text Color
-    color:"#ffffff"
+    color: "#ffffff",
+
+    '&.MuiButton-root': {
+        fontWeight: '600',
+        fontSize: '14px',
+        letterSpacing: '0.5px',
+    },
+
 }))
 
 //Increase Decrease Container
 export const IncDecContainer = styled(Box)(() => ({
     width: '90%',
 
-    display:'flex',
-    flexDirection:'row',
-    justifyContent:'space-around',
-    alignItems:'center',
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    alignItems: 'center',
 
-    "& > *":{
+    "& > *": {
         margin: '10px 0px',
     }
 }))
@@ -52,7 +59,7 @@ export const IncDecButton = styled(Button)(() => ({
     backgroundColor: theme.palette.itemcard.button,
 
     //Text Color
-    color:"#ffffff"
+    color: "#ffffff"
 }))
 
 //Remove Button
@@ -63,5 +70,5 @@ export const RemoveButton = styled(Button)(() => ({
     backgroundColor: theme.palette.itemcard.remove,
 
     //Text Color
-    color:"#ffffff"
+    color: "#ffffff"
 }))

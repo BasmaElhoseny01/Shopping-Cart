@@ -68,9 +68,8 @@ const mapStateToProps = state => {
 
     let itemsInCart = {};
     Object.entries(state).map(([key, item]) => {
-        if (state[key]?.count > 0) {
-            const id = state[key]?.id
-            itemsInCart[id] = state[key]?.count
+        if (state[key] > 0) {
+            itemsInCart[key] = state[key]
         }
         return null
     });

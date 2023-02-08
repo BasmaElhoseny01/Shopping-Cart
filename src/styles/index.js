@@ -7,7 +7,7 @@ const theme = createTheme({
     },
     system: {
       body: '#e0e0e0',
-      header: "#FAFFFF80"
+      header: "#FAFFFF99"
     },
     itemcard: {
       body: "#fafafa",

@@ -18,9 +18,10 @@ export const NavBarContainer = styled(Box)(() => ({
 
     position: 'fixed',
     top: '0px',
-    zIndex:"0",
+    zIndex:"1",
 
     backgroundColor: theme.palette.system.header,
+    boxShadow: 'rgba(149, 157, 165, 0.2) 0px 8px 24px',
 
     // borderBottom: '2px solid black'
 }))

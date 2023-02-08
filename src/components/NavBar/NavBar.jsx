@@ -23,7 +23,7 @@ function NavBar(props) {
 
   return (
     <NavBarContainer>
-        <img src={SuperMarketBag} alt="supermarket bag" width="50px" />
+        {/* <img src={SuperMarketBag} alt="supermarket bag" width="75px" style={{display:'hide'}}/> */}
       <Logo src={LogoImg} />
       {/* <NavBarTabs>
         <Typography>Home</Typography>
@@ -39,11 +39,10 @@ function NavBar(props) {
 }
 const mapStateToProps = (state) => {
 
-  const sum = Object.keys(state).reduce((acc, value) => acc + state[value]?.count, 0);
+  const sum = Object.keys(state).reduce((acc, value) => acc + state[value], 0);
   return {
     itemCount: sum
     // itemCount:100
-
   }
 }
 export default connect(mapStateToProps)(NavBar)

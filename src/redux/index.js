@@ -1,2 +1,4 @@
 //Export Actions
-export { buyItem , removeItem,deleteItem} from './shoppingCart/shoppingCartActions';
+export { buyItem } from './shoppingCart/shoppingCartActions/BuyActions';
+export { removeItem } from './shoppingCart/shoppingCartActions/RemoveActions'
+export { deleteItem } from './shoppingCart/shoppingCartActions/DeleteActions'

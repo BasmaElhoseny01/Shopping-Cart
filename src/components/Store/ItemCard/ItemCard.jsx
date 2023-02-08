@@ -22,7 +22,7 @@ function ItemCard(props) {
     const [snackBar, setSnackBar] = useState({ message: "" })
     return (
         <ItemCardContainer>
-            <img src={item?.imgUrl} alt={item?.name} width="200px" height="150px" style={{objectFit:"cover"}} />
+            <img src={item?.imgUrl} alt={item?.name} width="100%" height="150px" style={{objectFit:"cover"}} />
             <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-around', alignItems: 'center', width: '100%', margin: "15px auto" }}>
                 <Typography>{item?.name}</Typography>
                 <Typography>{item?.price}</Typography>
@@ -69,15 +69,13 @@ function ItemCard(props) {
 }
 
 const mapStateToProps = (state, ownProps) => {
-    let numOf = 'numOf';
-    const item = numOf.concat(ownProps.item.name, "s");
     return {
-        itemCount: state[item]?.count
+        itemCount: state[ownProps.item.id]
     }
 }
 
 const mapDispatchToProps = (dispatch, ownProps) => {
-    const item = ownProps.item.name;
+    const item = ownProps.item.id;
     return {
         buyItem: (number) => dispatch(buyItem(item, number)),
         removeItem: (number) => dispatch(removeItem(item, number)),

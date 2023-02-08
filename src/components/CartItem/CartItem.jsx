@@ -37,7 +37,7 @@ function CartItem(props) {
 }
 
 const mapDispatchToProps = (dispatch, ownProps) => {
-    const item = ownProps.item.name;
+    const item = ownProps.item.id;
     return {
         deleteItem: () => dispatch(deleteItem(item))
     }
