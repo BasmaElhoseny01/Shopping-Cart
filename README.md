@@ -1,5 +1,5 @@
 # Shopping Cart
-Shopping cart website using React-Redux library for as a state mangement tool 😊
+Shopping cart website using React-Redux library as a state managment tool 😊
 
 ## <img  align= center width=50px src="https://media4.giphy.com/media/QWRbnbKwghRE0GbAQx/giphy.gif?cid=6c09b952e94104243102e0e29bf1cd0d358227a4f0eadc38&rid=giphy.gif&ct=s">Table of Content
 
@@ -52,6 +52,7 @@ npm start
 ```
 
 </li>
+</ol>
 
 ## <img  align= center width=50px src="https://www.armediastudio.com/sites/default/files/cinegraph-hdr.gif"> Demo<a id="Demo"></a>
 
