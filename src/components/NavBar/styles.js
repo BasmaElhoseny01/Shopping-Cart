@@ -26,23 +26,6 @@ export const NavBarContainer = styled(Box)(() => ({
     // borderBottom: '2px solid black'
 }))
 
-//NavBarTabs
-export const NavBarImages = styled(Box)(() => ({
-    display: 'flex',
-    flexDirection: 'row',
-    justifyContent:'space-around',
-    alignItems: 'center',
-
-    // height: "100%",
-    // width:"200px",
-
-    // padding:"2px",
-
-    '& > *': {
-        margin: "0px 2px",
-    }
-}))
-
 //Logo
 export const Logo = styled("img")(() => ({
     // height:'100%',
