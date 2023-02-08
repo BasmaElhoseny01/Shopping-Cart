@@ -52,6 +52,7 @@ npm start
 ```
 
 </li>
+</ol>
 
 ## <img  align= center width=50px src="https://www.armediastudio.com/sites/default/files/cinegraph-hdr.gif"> Demo<a id="Demo"></a>
 
