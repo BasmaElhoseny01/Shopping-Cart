@@ -17,7 +17,7 @@ import { useEffect } from 'react';
 
 function App() {
   useEffect(() => {
-    document.title = "Family Cart"
+    document.title = "Shopping Cart"
   }, [])
 
   return (
