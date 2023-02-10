@@ -56,10 +56,12 @@ npm start
 
 ## <img  align= center width=50px src="https://www.armediastudio.com/sites/default/files/cinegraph-hdr.gif"> Demo<a id="Demo"></a>
 
+https://user-images.githubusercontent.com/72309546/218120590-55e5c508-ec54-46a9-8bba-a5b807144cee.mp4
+
+
 ## <img  align= center width=50px src="https://i.pinimg.com/originals/b4/13/34/b41334a036d6796c281a6e5cbb36e4b5.gif"> Reference<a id="Reference"></a>
 - <a href="https://www.youtube.com/watch?v=9boMnm5X9ak">Redux Codevolution Playlist</a>
 - <a href="https://github.com/BasmaElhoseny01/Redux">My Repo Notes</a>
-
 
 ## <img  align= center width=50px height=50px src="https://digitalbeauty.com/wp-content/uploads/2019/03/GIF_DB_Computer.gif"> Contributors <a id = "Contributors"></a>
 
