@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/Shopping-Cart/static/css/main.e6c13ad2.css",
+    "main.js": "/Shopping-Cart/static/js/main.dbc10269.js",
+    "static/js/787.c337d5b1.chunk.js": "/Shopping-Cart/static/js/787.c337d5b1.chunk.js",
+    "static/media/scarf.jpg": "/Shopping-Cart/static/media/scarf.e9b2b22c2c6a0cdf429a.jpg",
+    "static/media/laptop bag.jpg": "/Shopping-Cart/static/media/laptop bag.2768336ea8ac55c93489.jpg",
+    "static/media/watch.jpg": "/Shopping-Cart/static/media/watch.88f6d04b5a7b041b62bb.jpg",
+    "static/media/apples.jpg": "/Shopping-Cart/static/media/apples.281cb47025d2a52742c9.jpg",
+    "static/media/camera.jpg": "/Shopping-Cart/static/media/camera.ece5cdd5ee4236482517.jpg",
+    "static/media/sunglasses.jpg": "/Shopping-Cart/static/media/sunglasses.3e8baa2a168274bcabb9.jpg",
+    "static/media/shampoo.jpg": "/Shopping-Cart/static/media/shampoo.29f2e5473f2c100415a2.jpg",
+    "static/media/wallet.jpg": "/Shopping-Cart/static/media/wallet.d9e93a4da71ff0bd9cf0.jpg",
+    "static/media/mango.jpg": "/Shopping-Cart/static/media/mango.79e0bfaca251f75cf3ef.jpg",
+    "static/media/bag.jpg": "/Shopping-Cart/static/media/bag.3379ace2bc54da01a05b.jpg",
+    "static/media/hat.jpg": "/Shopping-Cart/static/media/hat.100d99ba69f4839e2b73.jpg",
+    "static/media/orange.jpg": "/Shopping-Cart/static/media/orange.96ae685cdefebd139c12.jpg",
+    "static/media/pencils.jpg": "/Shopping-Cart/static/media/pencils.63b69b969e42796a7e06.jpg",
+    "static/media/mobile.jpg": "/Shopping-Cart/static/media/mobile.a6d87b9b5c7e2cc2b31f.jpg",
+    "static/media/notebook.jpg": "/Shopping-Cart/static/media/notebook.74e61f44d0a7259705ea.jpg",
+    "static/media/laptop.jpg": "/Shopping-Cart/static/media/laptop.76888f6a7576869b88ac.jpg",
+    "static/media/mobile case.jpg": "/Shopping-Cart/static/media/mobile case.3e7ab38b1ddb981f520b.jpg",
+    "static/media/ruler.jpg": "/Shopping-Cart/static/media/ruler.11a8143027118a39a02a.jpg",
+    "static/media/airpods.jpg": "/Shopping-Cart/static/media/airpods.8c3457b7d229f802eded.jpg",
+    "static/media/book.jpg": "/Shopping-Cart/static/media/book.39a69ae9bd41905b7b3c.jpg",
+    "static/media/shoes.jpg": "/Shopping-Cart/static/media/shoes.20be4a55a0928699fee1.jpg",
+    "static/media/banana.jpg": "/Shopping-Cart/static/media/banana.2cfac0dd6a8b4edd9da6.jpg",
+    "static/media/logo.png": "/Shopping-Cart/static/media/logo.37b23efeabc92de702f6.png",
+    "index.html": "/Shopping-Cart/index.html",
+    "main.e6c13ad2.css.map": "/Shopping-Cart/static/css/main.e6c13ad2.css.map",
+    "main.dbc10269.js.map": "/Shopping-Cart/static/js/main.dbc10269.js.map",
+    "787.c337d5b1.chunk.js.map": "/Shopping-Cart/static/js/787.c337d5b1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.dbc10269.js"
+  ]
+}
