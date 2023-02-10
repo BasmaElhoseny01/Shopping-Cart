@@ -1,4 +1,4 @@
-# Shopping Cart
+# <img  align= center width=50px src="https://www.freeiconspng.com/uploads/pink-shopping-cart-icon-26.gif"> Shopping Cart
 Shopping cart website using React-Redux library as a state managment tool 😊
 
 ## <img  align= center width=50px src="https://media4.giphy.com/media/QWRbnbKwghRE0GbAQx/giphy.gif?cid=6c09b952e94104243102e0e29bf1cd0d358227a4f0eadc38&rid=giphy.gif&ct=s">Table of Content
