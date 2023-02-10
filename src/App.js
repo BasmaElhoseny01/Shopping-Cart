@@ -13,8 +13,13 @@ import Store from './components/Store/Store';
 import SideBar from './components/SideBar/SideBar';
 import { ThemeProvider } from '@mui/system';
 import theme from './styles';
+import { useEffect } from 'react';
 
 function App() {
+  useEffect(() => {
+    document.title = "Family Cart"
+  }, [])
+
   return (
     <ThemeProvider theme={theme}>
       <Provider store={store}>

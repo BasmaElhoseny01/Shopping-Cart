@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 
 //MUI
 import { Drawer, IconButton, Typography } from '@mui/material'
